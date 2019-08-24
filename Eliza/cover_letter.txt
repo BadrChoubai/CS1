@@ -1,0 +1,16 @@
+How “human” did Eliza seem when it was first demonstrated in class? In other words, how much did it seem that Eliza understood what was being said and thought about what answer to give? Why did it give that impression? 
+
+After you saw and understood the program logic, what did you think about Eliza’s "humanness"?	
+
+What makes Eliza seem not human? In other words, what would make a user suspect they were talking to a computer, not another human? Assume the user does not know anything about the implementation (code and logic).
+
+Describe what happened when you had someone else run Eliza. What were their comments? Did the conversation run smoothly or go off track and become silly (or stupid)? 
+
+
+List some features or capabilities you think would make Eliza more realistic. Don’t be concerned with how they would be coded.
+
+Knowing what I do know about AI and machine learning, I would think that adding some natural langauage processing may improve the responses. 
+
+Siri and others are the current versions of an Eliza-like program, just more complicated. Comment on their “humanness”. Do you think a new user might be fooled? Consider a comparison with a human answering all the questions, and “knowing” as much as Siri. Could you tell the difference? This is the modern version of the Imitation Game (Alan Turing).
+
+Philosophy (one or two paragraphs). Can a software system such as Eliza or Siri be considered intelligent? Why or why not? (There is no right or wrong answer!)

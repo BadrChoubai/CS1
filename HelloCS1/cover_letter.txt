@@ -1,0 +1,27 @@
+Cover Letter
+
+What problems did you have getting jGRASP set up?
+I chose to use IntelliJ as my IDE.
+
+What problems did you have getting Hello to run correctly?
+I didn't have issues setting it up but I learned that I can't set the return type as String if I am only writing the function to print to the console.
+
+List the three syntax errors you introduced and the error messages you got.  Any questions on these?
+
+In my printf() method I removed the flag and got this Error : Exception in thread "main" java.util.UnknownFormatConversionException: Conversion = '!';
+
+When removing the semicolons I get this error 
+---
+HelloCS1/HelloCS1.java:8: error: ';' expected
+		System.out.println("Hello Badr Choubai!")
+		                                         ^
+HelloCS1/HelloCS1.java:9: error: ';' expected
+		System.out.printf("Hello %s! \n", name)
+		                                       ^
+HelloCS1/HelloCS1.java:10: error: ';' expected
+		System.out.println("Ending Program")
+		                                    ^
+3 errors
+error: compilation failed
+---
+
