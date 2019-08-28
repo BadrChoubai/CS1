@@ -13,6 +13,6 @@ class Initials {
         };
         
         scanner.close();
-        System.out.println(initials.replace(" ", "."));
+        System.out.println(initials);
     };
 }
