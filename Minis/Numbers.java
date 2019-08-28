@@ -43,8 +43,8 @@ class Numbers {
     };
 
     public static double getQuotientFromArray(ArrayList<Integer> input) {
-        double toDouble = (double) input.indexOf(0);
+        double toDouble = (double) input.get(0);
 
-        return toDouble / input.indexOf(1);
+        return toDouble / input.get(1);
     };
 }
