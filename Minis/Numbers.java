@@ -11,6 +11,8 @@ class Numbers {
             int num = scanner.nextInt();
             userInput.add(num);
         } while (userInput.size() < 2);
+        
+        scanner.close();
 
         int sumFromarray = getSumFromArray(userInput);
         int productFromArray = getProductFromArray(userInput);
@@ -19,7 +21,6 @@ class Numbers {
         System.out.printf("Product : %s \n", productFromArray);
         System.out.printf("Quotient : %s \n", quotientFromArray);
 
-        scanner.close();
     };
 
     public static int getSumFromArray(ArrayList<Integer> input) {
