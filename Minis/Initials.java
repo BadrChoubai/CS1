@@ -3,15 +3,17 @@ import java.util.Scanner;
 class Initials {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String[] nameParts = { "First", "Middle", "Last" };
-        String initials = "";
+        char firstInitial, middleInitial, lastInitial;
+        String initials;
 
-        for (int i = 0; i < nameParts.length; i++) {
-            System.out.printf("What is your %s name? \n", nameParts[i]);
-            String answer = scanner.nextLine();
-            initials += answer.charAt(0);
-        }
-        ;
+        System.out.println("What is your first name");
+        firstInitial = scanner.nextLine().charAt(0);
+        System.out.println("What is your middle name");
+        middleInitial = scanner.nextLine().charAt(0);
+        System.out.println("What is your last name");
+        lastInitial = scanner.nextLine().charAt(0);
+
+        initials = String.format("%s.%s.%s.", firstInitial, middleInitial, lastInitial);
 
         scanner.close();
         System.out.println(initials);
