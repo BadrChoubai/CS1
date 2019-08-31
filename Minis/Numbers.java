@@ -1,3 +1,4 @@
+
 /*
 
 	Program: Numbers;
@@ -23,7 +24,7 @@ class Numbers {
             int num = scanner.nextInt();
             userInput.add(num);
         } while (userInput.size() < 2);
-        
+
         scanner.close();
 
         int sumFromarray = getSumFromArray(userInput);
