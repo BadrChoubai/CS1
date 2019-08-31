@@ -1,3 +1,15 @@
+/*
+
+	Program: Initials;
+	Author: Badr Choubai;
+	Date: 2019-08-30;
+    Description: A program that takes a user's full first, middle (if they have one) and, last name. It will return the user's initials;
+
+    Input: User's full name;
+    Output: User's initials;
+    
+*/
+
 import java.util.Scanner;
 
 class Initials {

@@ -1,3 +1,15 @@
+/*
+
+	Program: Restaurant Bill;
+	Author: Badr Choubai;
+	Date: 2019-08-30;
+    Description: A program that asks a user for their bill total and a tip amount, returns the billTotal calculated with tax and decided tip amout.
+
+    Input: billTotal, tipAmount;
+    Output: billTotal calculated with tax (7%) and selected tip amount (0 || 0.10 || 0.15 || 0.20);
+    
+*/
+
 import java.util.Scanner;
 
 class RestaurantBill {

@@ -1,3 +1,15 @@
+/*
+
+	Program: Numbers;
+	Author: Badr Choubai;
+	Date: 2019-08-30;
+    Description: A program that asks a user for two integers and runs a set of basic mathematical equations over them.
+
+    Input: Two integers;
+    Output: The sum, product and, quotient of the two integers;
+    
+*/
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
