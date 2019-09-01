@@ -31,14 +31,14 @@ class RestaurantBill {
         tipPercentage = scanner.nextInt();
 
         scanner.close();
-        double billTotalWithTip = calculateTotalWithTip(billTotal, percentageAmounts[tipPercentage]);
+        double billTotalWithTip = calculateTotalWithTip(billTotal, percentageAmounts[tipPercentage], 0.7);
         System.out.println(billTotalWithTip);
     }
 
-    public static double calculateTotalWithTip(double billTotal, double tipPercentage) {
+    public static double calculateTotalWithTip(double billTotal, double tipPercentage, double tax) {
         double result;
 
-        result = billTotal + (billTotal * tipPercentage);
+        result = billTotal + (billTotal * tipPercentage) + (billTotal * tax);
 
         return result;
     }
