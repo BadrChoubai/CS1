@@ -36,3 +36,10 @@ Major topics
 (double) value1 / value2.
 
 - On the restaurant bill program, also add in 7% tax.  Calculate tax on the initial bill (not including the tip); calculate the tip on the initial bill (not including the tax).  Add a line of output giving the tax amount.
+
+## Deliverables
+
+- one cover letter
+- output screen shots: two sample runs for each program; use cut and paste from the output.
+- source code (three .java classes)
+- two test cases for the restaurant program, on the example test plan sheet (from Moodle)
