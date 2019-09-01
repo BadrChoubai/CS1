@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 /*
 
@@ -10,8 +11,6 @@
     Output: billTotal calculated with tax (7%) and selected tip amount (0 || 0.10 || 0.15 || 0.20);
     
 */
-
-import java.util.Scanner;
 
 class RestaurantBill {
     public static void main(String[] args) {
@@ -32,14 +31,14 @@ class RestaurantBill {
         tipPercentageSelection = scanner.nextInt();
 
         scanner.close();
-        double billTotalWithTip = calculateTotalWithTip(billTotal, tipPercentageAmounts[tipPercentageSelection], taxPercentage);
-        System.out.println(billTotalWithTip);
+        billTotal = calculateTotal(billTotal, tipPercentageAmounts[tipPercentageSelection], taxPercentage);
+        System.out.println(billTotal);
     }
 
-    public static double calculateTotalWithTip(double billTotal, double tipPercentage, double taxPercentage) {
+    public static double calculateTotal(double total, double tipPercentage, double taxPercentage) {
         double result;
 
-        result = billTotal + (billTotal * tipPercentage) + (billTotal * taxPercentage);
+        result = total + (total * tipPercentage) + (total * taxPercentage);
 
         return result;
     }
