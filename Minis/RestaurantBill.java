@@ -18,7 +18,7 @@ class RestaurantBill {
         Scanner scanner = new Scanner(System.in);
         double billTotal;
         int tipPercentageSelection;
-        double taxPercentage = 0.7;
+        double taxPercentage = 0.07;
         double[] tipPercentageAmounts = { 0, 0.10, 0.15, 0.20 };
 
         System.out.println("How much was your bill");
