@@ -5,3 +5,11 @@ Tell the truth.
 Are you lying to me?
 Oh no, I'm so sorry that happened.
 Would you like a drink?
+Care to ellaborate?
+What did you work on today?
+Are you dealing with any blockers?
+What other tasks do you have for the day?
+Good, you are being postive.
+Why do you want that?
+Why do you think that?
+
