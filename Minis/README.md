@@ -43,3 +43,8 @@ Major topics
 - output screen shots: two sample runs for each program; use cut and paste from the output.
 - source code (three .java classes)
 - two test cases for the restaurant program, on the example test plan sheet (from Moodle)
+
+### Documentation 
+
+- [Cover Letter](documentation/cover_letter.md)
+- [Test Result Screenshots](documentation/test_results.md)
