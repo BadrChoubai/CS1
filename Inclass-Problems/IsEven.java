@@ -1,6 +1,6 @@
 class IsEven {
     public static void main(String[] args) {
-        int input = 3;
+        int input = 2;
         if (isEven(input)) {
             System.out.printf("%s is an even number \n", input);
         } else {
@@ -9,6 +9,6 @@ class IsEven {
     }
     
     public static boolean isEven(int input) {
-        return input % 2 == 0 ? true : false;
+        return input % 2 == 0;
     }
 }
