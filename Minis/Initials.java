@@ -26,6 +26,7 @@ class Initials {
                 initials += answer.substring(0, 1);
             }
         }
+        
         scanner.close();
 
         System.out.println(initials.toUpperCase());
