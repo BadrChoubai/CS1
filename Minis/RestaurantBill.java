@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 /*
 
@@ -11,6 +10,8 @@ import java.util.Scanner;
     Output: billTotal calculated with tax (7%) and selected tip amount (0 || 0.10 || 0.15 || 0.20);
     
 */
+
+import java.util.Scanner;
 
 class RestaurantBill {
     public static void main(String[] args) {
