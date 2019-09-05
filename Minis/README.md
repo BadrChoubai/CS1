@@ -46,5 +46,5 @@ Major topics
 
 ### Documentation 
 
-- [Cover Letter](documentation/cover_letter.md)
+- [Cover Letter](../cover_letters/Minis.md)
 - [Test Result Screenshots](../results/minis_results.md)
