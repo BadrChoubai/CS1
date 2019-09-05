@@ -9,8 +9,9 @@
 public class HelloCS1 {
     public static void main(String[] args) {
         String name = "Badr Choubai";
-        System.out.println("Hello Badr Choubai!");
+
+        System.out.println("Hello World!");
         System.out.printf("Hello %s! \n", name);
-        System.out.println("Ending Program");
+        System.out.println("Goodbye cruel world.");
     }
 }
