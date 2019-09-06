@@ -7,3 +7,6 @@ In the repo: Homework and Class Projects
 ---
 
 ## Homework
+
+[Hello CS1](./HelloCS1/README.md) \
+[Minis](./Minis/README.md)
