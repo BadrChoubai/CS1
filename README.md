@@ -10,3 +10,4 @@ In the repo: Homework and Class Projects
 
 [Hello CS1](./HelloCS1/README.md) \
 [Minis](./Minis/README.md)
+[Calculator](./Calculator/README.md)
