@@ -1,22 +1,15 @@
-# CS 1, Fall 2019
+# Project Cover Letter
 
 Dr. Gurka \
-Project #5: Calculator \
-September 10
+CS 1, Fall 2019
 
 ---
 
-## Overview
+Your name: Badr Choubai \
+Project: Calculator \
+Date submitted: 2019-09-16
 
-This program implements a simple, interactive calculator.
-
-### Major Topics
-
-- Writing a program from scratch
-- Multiple Methods
-- testing
-
-### Discussion Questions
+## Discussion Questions
 
 1. Overflow - Find out what happens when you try to add two numbers whose sum exceeds the maximum integer value. Test two billion plus two billion. What result did you get? Explain why overflow happens on a computer.
 
@@ -28,14 +21,12 @@ This program implements a simple, interactive calculator.
 
 4. What semantics (meaning of the code) did you have the most trouble understanding?
 
-### Challenges
+### Time spent on the project outside class
 
-### Deliverables
+### Is the project complete and correct
 
-- Cover letter with discussion question
-- Source code (1 .java class)
-- text file with cut-and-paste copy of testing session #5
+### Collaboration. Other than office hours help, who did you work with or get help from
 
-### Documentation
+### References. Other than the textbook, what references did you use?  Be specific
 
-- [Cover Letter](../cover_letters/Calculator.md)
+### Reflection
