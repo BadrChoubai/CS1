@@ -58,13 +58,34 @@ class Calculator {
                     this.divisionSolveCounter++;
                     break;
             }            
+    
+            System.out.println("would you like to solve another problem?");
+            System.out.println("(0) No");
+            System.out.println("(1) Yes");
+            int userAnswer = this.scanner.nextInt();
+
+            if(userAnswer == 0) {
+                using = false;
+            } else {
+                using = true;
+            }
             
-            using = false;
+            this.totalSolvedCount++;
         } while(using);
 
     }
 
-    private void printResult() {};
+    private void printResult() {
+        System.out.println("Calculation Results \n");
+
+        System.out.printf("Addition Solve Count %d \n", this.additionSolveCounter);
+        System.out.printf("Subtraction Solve Count %d \n", this.subtractionSolveCounter);
+        System.out.printf("Multiplication Solve Count %d \n", this.multiplicationSolveCounter);
+        System.out.printf("Division Solve Count %d \n", this.divisionSolveCounter);
+
+        System.out.printf("Total Problems solved %d \n", this.totalSolvedCount);
+        
+    };
 
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
