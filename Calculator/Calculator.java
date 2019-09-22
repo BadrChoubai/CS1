@@ -23,7 +23,7 @@ import java.util.Scanner;
 class Calculator {
     private Scanner scanner;
     private int totalSolvedCount, additionSolveCounter, subtractionSolveCounter, multiplicationSolveCounter,
-            divisionSolveCounter;
+            divisionSolveCounter, modulousSolveCounter;
 
     Calculator() {
         this.scanner = new Scanner(System.in);
@@ -43,7 +43,7 @@ class Calculator {
     private void calculate() {
         boolean using = true;
         int operationChoice;
-        String[] operationChoices = { "addition", "subtraction", "multiplication", "division" };
+        String[] operationChoices = { "addition", "subtraction", "multiplication", "division", "modulous"};
         int operandOne;
         int operandTwo;
 
@@ -53,6 +53,7 @@ class Calculator {
             System.out.println("(2) subtraction");
             System.out.println("(3) multiplication");
             System.out.println("(4) division");
+            System.out.println("(5) modulous");
 
             operationChoice = this.scanner.nextInt();
             System.out.printf("You chose %s \n", operationChoices[operationChoice - 1]);
@@ -64,20 +65,29 @@ class Calculator {
 
             switch (operationChoices[operationChoice - 1]) {
             case "addition":
+                System.out.printf("%d + %d = %d \n", operandOne, operandTwo, operandOne + operandTwo);
                 System.out.printf("Addition result: %d \n", operandOne + operandTwo);
                 this.additionSolveCounter++;
                 break;
             case "subtraction":
+                System.out.printf("%d - %d = %d \n", operandOne, operandTwo, operandOne - operandTwo);
                 System.out.printf("Subtraction result: %d \n", operandOne - operandTwo);
                 this.subtractionSolveCounter++;
                 break;
             case "multiplication":
+                System.out.printf("%d * %d = %d \n", operandOne, operandTwo, operandOne * operandTwo);
                 System.out.printf("Multiplication result: %d \n", operandOne * operandTwo);
                 this.multiplicationSolveCounter++;
                 break;
             case "division":
+                System.out.printf("%d / %d = %d \n", operandOne, operandTwo, operandOne / operandTwo);
                 System.out.printf("Division result: %d \n", operandOne / operandTwo);
                 this.divisionSolveCounter++;
+                break;
+            case "modulous":
+                System.out.printf("%d %% %d = %s \n", operandOne, operandTwo, operandOne % operandTwo);
+                System.out.printf("Modulous result: %d \n", operandOne % operandTwo);
+                this.modulousSolveCounter++;
                 break;
             }
 
@@ -103,6 +113,7 @@ class Calculator {
         System.out.printf("Subtraction Solve Count %d \n", this.subtractionSolveCounter);
         System.out.printf("Multiplication Solve Count %d \n", this.multiplicationSolveCounter);
         System.out.printf("Division Solve Count %d \n", this.divisionSolveCounter);
+        System.out.printf("Modulous Solve Count %d \n", this.modulousSolveCounter);
 
         System.out.printf("Total Problems solved %d \n", this.totalSolvedCount);
 

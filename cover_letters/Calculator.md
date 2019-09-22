@@ -21,9 +21,23 @@ Date submitted: 2019-09-16
 
 4. What semantics (meaning of the code) did you have the most trouble understanding?
 
+### Answers
+
+1. answer
+
+2. answer
+
+3. answer
+
+4. answer
+
 ### Time spent on the project outside class
 
+1.5 hours
+
 ### Is the project complete and correct
+
+Yes
 
 ### Collaboration. Other than office hours help, who did you work with or get help from
 

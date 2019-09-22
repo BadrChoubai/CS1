@@ -1,0 +1,91 @@
+Tests
+
+Test One - The user asks for two addition and one division problem
+
+Hello badrchoubai welcome to Calculator v.0.0.1
+
+This is a program that will solve mathematical problems for you
+Which operation would you like to perform
+(1) addition
+(2) subtraction
+(3) multiplication
+(4) division
+1
+You chose addition 
+Give me a number
+2
+Give me another number
+2
+Addition result: 4 
+would you like to solve another problem?
+(0) No
+(1) Yes
+1
+Which operation would you like to perform
+(1) addition
+(2) subtraction
+(3) multiplication
+(4) division
+4
+You chose division 
+Give me a number
+6
+Give me another number
+2
+Division result: 3 
+would you like to solve another problem?
+(0) No
+(1) Yes
+1
+Which operation would you like to perform
+(1) addition
+(2) subtraction
+(3) multiplication
+(4) division
+1
+You chose addition 
+Give me a number
+2
+Give me another number
+2
+Addition result: 4 
+would you like to solve another problem?
+(0) No
+(1) Yes
+0
+Calculation Results 
+
+Addition Solve Count 2 
+Subtraction Solve Count 0 
+Multiplication Solve Count 0 
+Division Solve Count 1 
+Total Problems solved 3
+
+Test Two - The user asks for one subtraction problem
+
+Hello badrchoubai welcome to Calculator v.0.0.1 
+
+This is a program that will solve mathematical problems for you
+Which operation would you like to perform
+(1) addition
+(2) subtraction
+(3) multiplication
+(4) division
+2
+You chose subtraction 
+Give me a number
+411421
+Give me another number
+4112
+Subtraction result: 407309 
+would you like to solve another problem?
+(0) No
+(1) Yes
+0
+Calculation Results 
+
+Addition Solve Count 0 
+Subtraction Solve Count 1 
+Multiplication Solve Count 0 
+Division Solve Count 0 
+Total Problems solved 1 
