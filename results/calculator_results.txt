@@ -1,6 +1,4 @@
-Tests
-
-Test One - The user asks for two addition and one division problem
+Testing session number 5 results
 
 Hello badrchoubai welcome to Calculator v.0.0.1
 
@@ -10,105 +8,15 @@ Which operation would you like to perform
 (2) subtraction
 (3) multiplication
 (4) division
-1
-You chose addition 
-Give me a number
-2
-Give me another number
-2
-Addition result: 4 
-would you like to solve another problem?
-(0) No
-(1) Yes
-1
-Which operation would you like to perform
-(1) addition
-(2) subtraction
-(3) multiplication
-(4) division
-4
-You chose division 
-Give me a number
-6
-Give me another number
-2
-Division result: 3 
-would you like to solve another problem?
-(0) No
-(1) Yes
-1
-Which operation would you like to perform
-(1) addition
-(2) subtraction
-(3) multiplication
-(4) division
-1
-You chose addition 
-Give me a number
-2
-Give me another number
-2
-Addition result: 4 
-would you like to solve another problem?
-(0) No
-(1) Yes
-0
-Calculation Results 
-
-Addition Solve Count 2 
-Subtraction Solve Count 0 
-Multiplication Solve Count 0 
-Division Solve Count 1 
-Total Problems solved 3
-
-Test Two - The user asks for one subtraction problem
-
-Hello badrchoubai welcome to Calculator v.0.0.1 
-
-This is a program that will solve mathematical problems for you
-Which operation would you like to perform
-(1) addition
-(2) subtraction
-(3) multiplication
-(4) division
-2
-You chose subtraction 
-Give me a number
-411421
-Give me another number
-4112
-Subtraction result: 407309 
-would you like to solve another problem?
-(0) No
-(1) Yes
-0
-Calculation Results 
-
-Addition Solve Count 0 
-Subtraction Solve Count 1 
-Multiplication Solve Count 0 
-Division Solve Count 0 
-Total Problems solved 1 
-
-Test Three - all five problem types solved
-
-Hello badrchoubai welcome to Calculator v.0.0.1 
-
-This is a program that will solve mathematical problems for you
-Which operation would you like to perform
-(1) addition
-(2) subtraction
-(3) multiplication
-(4) division
 (5) modulous
 1
-You chose addition 
+You chose addition
 Give me a number
-1048
+111
 Give me another number
-3618
-1048 + 3618 = 4666 
-Addition result: 4666 
+222
+111 + 222 = 333
+Addition result: 333
 would you like to solve another problem?
 (0) No
 (1) Yes
@@ -119,32 +27,14 @@ Which operation would you like to perform
 (3) multiplication
 (4) division
 (5) modulous
-2
-You chose subtraction 
-Give me a number
-3618
-Give me another number
-1048
-3618 - 1048 = 2570 
-Subtraction result: 2570 
-would you like to solve another problem?
-(0) No
-(1) Yes
 1
-Which operation would you like to perform
-(1) addition
-(2) subtraction
-(3) multiplication
-(4) division
-(5) modulous
-3
-You chose multiplication 
+You chose addition
 Give me a number
-1048
+9999
 Give me another number
-3618
-1048 * 3618 = 3791664 
-Multiplication result: 3791664 
+8888
+9999 + 8888 = 18887
+Addition result: 18887
 would you like to solve another problem?
 (0) No
 (1) Yes
@@ -156,13 +46,13 @@ Which operation would you like to perform
 (4) division
 (5) modulous
 4
-You chose division 
+You chose division
 Give me a number
-1048
+83
 Give me another number
-3618
-1048 / 3618 = 0 
-Division result: 0 
+83
+83 / 83 = 1
+Division result: 1
 would you like to solve another problem?
 (0) No
 (1) Yes
@@ -173,34 +63,18 @@ Which operation would you like to perform
 (3) multiplication
 (4) division
 (5) modulous
-5
-You chose modulous 
+4
+You chose division
 Give me a number
-3618
+84
 Give me another number
-1048
-3618 % 1048 = 474 
-Modulous result: 474 
+83
+84 / 83 = 1
+Division result: 1
 would you like to solve another problem?
 (0) No
 (1) Yes
-0
-Calculation Results 
-
-Addition Solve Count 1 
-Subtraction Solve Count 1 
-Multiplication Solve Count 1 
-Division Solve Count 1 
-Modulous Solve Count 1 
-Total Problems solved 5 
-
-Test Four - Explain inexact results on integer division such as:
-
-        2 / 5 = 0 and 51 / 25 = 2
-        
-Hello badrchoubai welcome to Calculator v.0.0.1 
-
-This is a program that will solve mathematical problems for you
+1
 Which operation would you like to perform
 (1) addition
 (2) subtraction
@@ -208,13 +82,31 @@ Which operation would you like to perform
 (4) division
 (5) modulous
 4
-You chose division 
+You chose division
 Give me a number
+83
+Give me another number
+84
+83 / 84 = 0
+Division result: 0
+would you like to solve another problem?
+(0) No
+(1) Yes
+1
+Which operation would you like to perform
+(1) addition
+(2) subtraction
+(3) multiplication
+(4) division
+(5) modulous
 2
+You chose subtraction
+Give me a number
+0
 Give me another number
-5
-2 / 5 = 0 
-Division result: 0 
+0
+0 - 0 = 0
+Subtraction result: 0
 would you like to solve another problem?
 (0) No
 (1) Yes
@@ -225,23 +117,23 @@ Which operation would you like to perform
 (3) multiplication
 (4) division
 (5) modulous
-4
-You chose division 
+1
+You chose addition
 Give me a number
-51
+500000
 Give me another number
-25
-51 / 25 = 2 
-Division result: 2 
+500001
+500000 + 500001 = 1000001
+Addition result: 1000001
 would you like to solve another problem?
 (0) No
 (1) Yes
 0
-Calculation Results 
+Calculation Results
 
-Addition Solve Count 0 
-Subtraction Solve Count 0 
-Multiplication Solve Count 0 
-Division Solve Count 2 
-Modulous Solve Count 0 
-Total Problems solved 2 
+Addition Solve Count 3
+Subtraction Solve Count 1
+Multiplication Solve Count 0
+Division Solve Count 3
+Modulous Solve Count 0
+Total Problems solved 7
