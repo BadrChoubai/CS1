@@ -89,3 +89,107 @@ Subtraction Solve Count 1
 Multiplication Solve Count 0 
 Division Solve Count 0 
 Total Problems solved 1 
+
+Test Three - all five problem types solved
+
+Hello badrchoubai welcome to Calculator v.0.0.1 
+
+This is a program that will solve mathematical problems for you
+Which operation would you like to perform
+(1) addition
+(2) subtraction
+(3) multiplication
+(4) division
+(5) modulous
+1
+You chose addition 
+Give me a number
+1048
+Give me another number
+3618
+1048 + 3618 = 4666 
+Addition result: 4666 
+would you like to solve another problem?
+(0) No
+(1) Yes
+1
+Which operation would you like to perform
+(1) addition
+(2) subtraction
+(3) multiplication
+(4) division
+(5) modulous
+2
+You chose subtraction 
+Give me a number
+3618
+Give me another number
+1048
+3618 - 1048 = 2570 
+Subtraction result: 2570 
+would you like to solve another problem?
+(0) No
+(1) Yes
+1
+Which operation would you like to perform
+(1) addition
+(2) subtraction
+(3) multiplication
+(4) division
+(5) modulous
+3
+You chose multiplication 
+Give me a number
+1048
+Give me another number
+3618
+1048 * 3618 = 3791664 
+Multiplication result: 3791664 
+would you like to solve another problem?
+(0) No
+(1) Yes
+1
+Which operation would you like to perform
+(1) addition
+(2) subtraction
+(3) multiplication
+(4) division
+(5) modulous
+4
+You chose division 
+Give me a number
+1048
+Give me another number
+3618
+1048 / 3618 = 0 
+Division result: 0 
+would you like to solve another problem?
+(0) No
+(1) Yes
+1
+Which operation would you like to perform
+(1) addition
+(2) subtraction
+(3) multiplication
+(4) division
+(5) modulous
+5
+You chose modulous 
+Give me a number
+3618
+Give me another number
+1048
+3618 % 1048 = 474 
+Modulous result: 474 
+would you like to solve another problem?
+(0) No
+(1) Yes
+0
+Calculation Results 
+
+Addition Solve Count 1 
+Subtraction Solve Count 1 
+Multiplication Solve Count 1 
+Division Solve Count 1 
+Modulous Solve Count 1 
+Total Problems solved 5 
