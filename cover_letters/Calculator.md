@@ -29,7 +29,7 @@ Date submitted: 2019-09-16
 
 3. System.out.printf("%d %% %d = %s \n", operandOne, operandTwo, operandOne % operandTwo);
 
-4. The method classifications: public, protected, private. 
+4. The method classifications: public, protected, private.
 
 ### Time spent on the project outside class
 
