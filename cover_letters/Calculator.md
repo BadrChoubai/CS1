@@ -23,13 +23,13 @@ Date submitted: 2019-09-16
 
 ### Answers
 
-1. answer
+1. When attempting to add two billion plus two billion I encountered a Java compiler error.
 
-2. answer
+2. This happen because the division solver returns an int and not a floating point number.
 
-3. answer
+3. System.out.printf("%d %% %d = %s \n", operandOne, operandTwo, operandOne % operandTwo);
 
-4. answer
+4. The method classifications: public, protected, private. 
 
 ### Time spent on the project outside class
 
@@ -43,4 +43,16 @@ Yes
 
 ### References. Other than the textbook, what references did you use?  Be specific
 
+Java Documentation
+
 ### Reflection
+
+1. What went well on this project?
+
+    My ability to think of a quick solution
+
+2. What problems did you have on this project?
+
+    I started by overthinking a solution.
+
+Your submission of this project is your affirmation that all the work you have submitted is your own, except as allowed in the assignment.

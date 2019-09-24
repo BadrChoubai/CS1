@@ -193,3 +193,55 @@ Multiplication Solve Count 1
 Division Solve Count 1 
 Modulous Solve Count 1 
 Total Problems solved 5 
+
+Test Four - Explain inexact results on integer division such as:
+
+        2 / 5 = 0 and 51 / 25 = 2
+        
+Hello badrchoubai welcome to Calculator v.0.0.1 
+
+This is a program that will solve mathematical problems for you
+Which operation would you like to perform
+(1) addition
+(2) subtraction
+(3) multiplication
+(4) division
+(5) modulous
+4
+You chose division 
+Give me a number
+2
+Give me another number
+5
+2 / 5 = 0 
+Division result: 0 
+would you like to solve another problem?
+(0) No
+(1) Yes
+1
+Which operation would you like to perform
+(1) addition
+(2) subtraction
+(3) multiplication
+(4) division
+(5) modulous
+4
+You chose division 
+Give me a number
+51
+Give me another number
+25
+51 / 25 = 2 
+Division result: 2 
+would you like to solve another problem?
+(0) No
+(1) Yes
+0
+Calculation Results 
+
+Addition Solve Count 0 
+Subtraction Solve Count 0 
+Multiplication Solve Count 0 
+Division Solve Count 2 
+Modulous Solve Count 0 
+Total Problems solved 2 
