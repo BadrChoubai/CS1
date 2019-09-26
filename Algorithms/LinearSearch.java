@@ -5,7 +5,7 @@ class LinearSearch {
         int[] input = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         int[] shuffledInput = randomizeArray(input);
 
-        int search = 100;
+        int search = 6;
 
         solution(input, search);
 
