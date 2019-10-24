@@ -6,71 +6,70 @@
  * 	Bears and Fish is a
  * 	simulation of two populations, the bears and the fish, competing in a river.
  */
-
 import java.util.Random;
-import java.util.Scanner;
 
 public class BearsAndFish {
 	public static void main(String[] args) {
-		greetUser();
-		char[] river = setupRiver();
-		Scanner inputScanner = new Scanner(System.in);
-		int random = generateRandomNumber(river.length);
-		 
-		String bearAmount =	getUserInput('b', inputScanner);
-		String fishAmount =	getUserInput('f', inputScanner);
-		String[] amounts = {bearAmount, fishAmount};
+		greetUser(); // Greet the user
 
-		placeCreaturesInRiver(river, amounts);
+		// The next two lines setup the river 
+		River simulationRiver = new River(7); 
+		simulationRiver.setupRiver();
 
-		inputScanner.close();
-	};
+		System.out.println(simulationRiver.getRiver());
+		simulationRiver.addCreaturesToRiver('b', 1);
+		System.out.println(simulationRiver.getRiver());
+		simulationRiver.addCreaturesToRiver('f', 2);
+		System.out.println(simulationRiver.getRiver());
+
+	}
 
 	private static void greetUser() {
-		System.out.println("Welcome to Bears and Fish. A simplified simulation of a river's population");
+		System.out.printf("Welcome to Bears and Fish!\n\nThis is a simplified simulation of two populations,"
+				+ " Bears and Fish, competing in a river.\n\n");
 	}
 
-	private static char[] setupRiver() {
-		char[] river = {'-', '-', '-', '-', '-', '-', '-'};
-		return river;
+}
+
+/**
+ * I decided to implement the River as a custom type as it felt more cohesive to abstract the River functionallity away from
+ * the BearsAndFish program
+ */
+class River {
+	int size;
+	char[] river;
+	Random numberGenerator;
+
+	River(int size) {
+		this.size = size;
+		this.numberGenerator = new Random();
 	}
-	
-	private static String getUserInput(Character creatureType, Scanner scanner) {
-		int inputTotal;
-		String creature = creatureType.equals('b') ? "Bear" : "Fish";
-		System.out.printf("How many %s would you like in the river? \n", creature);
-		inputTotal = scanner.nextInt();
 
-		String result = String.format("%d%s", inputTotal, creatureType);
-		System.out.println(result);
-		return result;
+	public void setupRiver() {
+		this.river = createRiver(this.size);
 	}
 
-	private static char[] placeCreaturesInRiver(char[] river, String[] creatureInputInfo) {
-		int bearAmount = Integer.parseInt(creatureInputInfo[0].substring(0, 1)); ;
-		int fishAmount = Integer.parseInt(creatureInputInfo[1].substring(0, 1)); ;
-		int creatureTotal = bearAmount + fishAmount;
+  	public char[] getRiver() {
+		return this.river;
+	}
 
-		for (int i = 0; i < creatureTotal; i++) {
-			int randomIndex = generateRandomNumber(river.length);
-			if(river[randomIndex] == '-') {
-				river[randomIndex] = 'b';
-			} else if (river[randomIndex] == 'b') {
-				river[randomIndex] = 'f';
-			}
-
+	private char[] createRiver(int riverSize) {
+		char[] newRiver = new char[size];
+		for (int i = 0; i < newRiver.length; i++) {
+			newRiver[i] = '-';
 		}
-
-		System.out.println(river);
-		return river;
-
-	}
- 	
-	private static int generateRandomNumber(int max) {
-		Random numberGenerator = new Random();
-		int randomNumber = numberGenerator.nextInt(max);
-		return randomNumber;
+		return newRiver;
 	}
 
-
-}	
+	public char[] addCreaturesToRiver(char creatureType, int creatureAmount) {
+		int i = 0;
+		while (creatureAmount > i) {
+			int randomIndex = numberGenerator.nextInt(this.size);
+			if(this.river[randomIndex] == '-') {
+				this.river[randomIndex] = creatureType;
+			}
+			creatureAmount--;
+		}
+		return this.river;
+	}	
+}
