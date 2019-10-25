@@ -32,7 +32,7 @@ public class BearsAndFish {
 }
 
 /**
- * I decided to implement the River as a custom type as it felt more cohesive to abstract the River functionallity away from
+ * I decided to implement the River as a custom class as it felt more cohesive to abstract the River functionallity away from
  * the BearsAndFish program
  */
 class River {
