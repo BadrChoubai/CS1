@@ -12,8 +12,8 @@ public class BearsAndFish {
 	public static void main(String[] args) {
 		greetUser(); // Greet the user
 
-		// The next two lines setup the river 
-		River simulationRiver = new River(7); 
+		// The next two lines setup the river
+		River simulationRiver = new River(7);
 		simulationRiver.setupRiver();
 
 		System.out.println(simulationRiver.getRiver());
@@ -32,8 +32,8 @@ public class BearsAndFish {
 }
 
 /**
- * I decided to implement the River as a custom class as it felt more cohesive to abstract the River functionallity away from
- * the BearsAndFish program
+ * I decided to implement the River as a custom class as it felt more cohesive
+ * to abstract the River functionallity away from the BearsAndFish program
  */
 class River {
 	int size;
@@ -45,11 +45,15 @@ class River {
 		this.numberGenerator = new Random();
 	}
 
-	public void setupRiver() {
-		this.river = createRiver(this.size);
-	}
-
-  	public char[] getRiver() {
+	public char[] addCreaturesToRiver(char creatureType, int creatureAmount) {
+		int i = 0;
+		while (creatureAmount > i) {
+			int randomIndex = numberGenerator.nextInt(this.size);
+			if (this.river[randomIndex] == '-') {
+				this.river[randomIndex] = creatureType;
+			}
+			creatureAmount--;
+		}
 		return this.river;
 	}
 
@@ -61,15 +65,12 @@ class River {
 		return newRiver;
 	}
 
-	public char[] addCreaturesToRiver(char creatureType, int creatureAmount) {
-		int i = 0;
-		while (creatureAmount > i) {
-			int randomIndex = numberGenerator.nextInt(this.size);
-			if(this.river[randomIndex] == '-') {
-				this.river[randomIndex] = creatureType;
-			}
-			creatureAmount--;
-		}
+	public char[] getRiver() {
 		return this.river;
-	}	
+	}
+
+	public void setupRiver() {
+		this.river = createRiver(this.size);
+	}
+
 }
