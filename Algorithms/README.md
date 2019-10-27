@@ -15,4 +15,5 @@ This is a compilation of algorithms that I've been trying to learn in parallel w
 ## Data Structures
 
 [Data Structures](./DataStructures/README.md)
+
 [Binary Tree](./DataStructures/Trees/BinaryTree.java)
