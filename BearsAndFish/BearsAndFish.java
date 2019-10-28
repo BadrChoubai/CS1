@@ -7,26 +7,51 @@
  * 	simulation of two populations, the bears and the fish, competing in a river.
  */
 import java.util.Random;
+import java.util.Scanner;
 
 public class BearsAndFish {
+	private static int getUserInput(char creature, Scanner inputScanner) {
+		int creatureAmount = 0;
+
+		switch(creature) {
+			case 'f': 
+				System.out.println("How many fish would you like to add to the river?");
+				creatureAmount = inputScanner.nextInt();
+				break;
+			case 'b':
+				System.out.println("How many bears would you like to add to the river?");
+				creatureAmount = inputScanner.nextInt();
+				break;
+		}
+
+		return creatureAmount;
+	}
+	
 	private static void greetUser() {
 		System.out.printf("Welcome to Bears and Fish!\n\nThis is a simplified simulation of two populations,"
 				+ " Bears and Fish, competing in a river.\n\n");
 	}
 
 	public static void main(String[] args) {
+		Scanner inputScanner = new Scanner(System.in);
 		greetUser(); // Greet the user
 
 		// The next two lines setup the river
 		River simulationRiver = new River(7);
 		simulationRiver.setupRiver();
 
-		System.out.println(simulationRiver.getRiver());
-		simulationRiver.addCreaturesToRiver('b', 1);
-		System.out.println(simulationRiver.getRiver());
-		simulationRiver.addCreaturesToRiver('f', 2);
-		System.out.println(simulationRiver.getRiver());
+		int bearCount = getUserInput('b', inputScanner);
+		int fishCount = getUserInput('f', inputScanner);
 
+		System.out.println("Bears: "+bearCount);
+		System.out.println("Fish: "+fishCount);
+		
+		simulationRiver.getRiver();
+		simulationRiver.addCreaturesToRiver('b', bearCount);
+		simulationRiver.addCreaturesToRiver('f', fishCount);
+		simulationRiver.getRiver();
+
+		inputScanner.close();
 	}
 }
 
@@ -65,6 +90,7 @@ class River {
 	}
 
 	public char[] getRiver() {
+		System.out.println(this.river);
 		return this.river;
 	}
 
