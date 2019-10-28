@@ -9,6 +9,11 @@
 import java.util.Random;
 
 public class BearsAndFish {
+	private static void greetUser() {
+		System.out.printf("Welcome to Bears and Fish!\n\nThis is a simplified simulation of two populations,"
+				+ " Bears and Fish, competing in a river.\n\n");
+	}
+
 	public static void main(String[] args) {
 		greetUser(); // Greet the user
 
@@ -23,12 +28,6 @@ public class BearsAndFish {
 		System.out.println(simulationRiver.getRiver());
 
 	}
-
-	private static void greetUser() {
-		System.out.printf("Welcome to Bears and Fish!\n\nThis is a simplified simulation of two populations,"
-				+ " Bears and Fish, competing in a river.\n\n");
-	}
-
 }
 
 /**
