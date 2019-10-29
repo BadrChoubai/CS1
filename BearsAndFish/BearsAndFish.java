@@ -11,6 +11,10 @@ public class BearsAndFish {
 	 * Greet the user.
 	 * Explain the program.
 	 */
+	private static void greetUser() {
+		System.out.printf("Welcome to Bears and Fish!\n\nThis is a simplified simulation of two populations,"
+				+ " Bears and Fish, competing in a river.\n\n");
+	}
 
 	/**
 	 * Setup the river
@@ -36,7 +40,7 @@ public class BearsAndFish {
 	 * @param args
 	 */  
 	public static void main(String[] args) {
-
+		greetUser();
 	}
 
 	  
