@@ -1,10 +1,8 @@
+import java.util.Scanner;
 
 /**
- * Name: Badr Choubai 
- * Project: Bears and Fish 
- * Description: 
- * 	Bears and Fish is a
- * 	simulation of two populations, the bears and the fish, competing in a river.
+ * Name: Badr Choubai Project: Bears and Fish Description: Bears and Fish is a
+ * simulation of two populations, the bears and the fish, competing in a river.
  */
 public class BearsAndFish {
 	/**
@@ -38,6 +36,23 @@ public class BearsAndFish {
 	/**
 	 * Get number of fish from user
 	*/
+	private static int getCreatureAmount(char creature, Scanner inputScanner) {
+		int creatureAmount = 0;
+
+		switch(creature) {
+			case 'b':
+				System.out.println("How many bears would you like to add to the river?");
+				creatureAmount = inputScanner.nextInt();
+				break;
+			case 'f':
+				System.out.println("How many fish would you like to add to the river?");
+				creatureAmount = inputScanner.nextInt();
+				break;
+		}
+
+		return creatureAmount;
+	}
+
 
 	 /**
 	  * Add creatures to the initial river
@@ -50,16 +65,25 @@ public class BearsAndFish {
 	public static void main(String[] args) {
 		greetUser();
 		setupRiver(7);
+		Scanner inputScanner = new Scanner(System.in);
+
+		int numberOfBears = getCreatureAmount('b', inputScanner);
+		int numberOfFish = getCreatureAmount('f', inputScanner);
+
+		System.out.println(numberOfBears);
+		System.out.println(numberOfFish);
+
+		inputScanner.close();
 	}
 
 	  
 }
 
 class River {
-	char[] river;
-	int riverSize;
 	int amountOfBears;
 	int amountOfFish;
+	char[] river;
+	int riverSize;
 
 	public River(int riverSize) {
 		this.riverSize = riverSize;
