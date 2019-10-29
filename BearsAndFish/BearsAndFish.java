@@ -21,7 +21,15 @@ public class BearsAndFish {
 	 * 	- make the river size 7;
 	 * 	- fill with blanks;
 	 * 	- print the river;
+	 * @param size the size of the river;
 	 */
+	private static River setupRiver(int size) {
+		River river = new River(size);
+		river.setupRiver();
+		System.out.println(river.getRiver());
+		return river;
+	} 
+
 
 	/**
 	 * Get number of bears from user
@@ -41,6 +49,7 @@ public class BearsAndFish {
 	 */  
 	public static void main(String[] args) {
 		greetUser();
+		setupRiver(7);
 	}
 
 	  
@@ -52,11 +61,10 @@ class River {
 	int amountOfBears;
 	int amountOfFish;
 
-	public River() {
-		riverSize = 7;
+	public River(int riverSize) {
+		this.riverSize = riverSize;
 		river = new char[riverSize]; 
 	}
-
 
 	public void setupRiver() {
 		for (int i = 0; i < this.riverSize; i++) {
