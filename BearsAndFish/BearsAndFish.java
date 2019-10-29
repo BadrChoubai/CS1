@@ -7,9 +7,39 @@
  * 	simulation of two populations, the bears and the fish, competing in a river.
  */
 public class BearsAndFish {
+	/**
+	 * Greet the user.
+	 * Explain the program.
+	 */
+
+	/**
+	 * Setup the river
+	 * 	- make the river size 7;
+	 * 	- fill with blanks;
+	 * 	- print the river;
+	 */
+
+	/**
+	 * Get number of bears from user
+	*/
+
+	/**
+	 * Get number of fish from user
+	*/
+
+	 /**
+	  * Add creatures to the initial river
+	  */
+
+	/**
+	 * Main method
+	 * @param args
+	 */  
 	public static void main(String[] args) {
 
 	}
+
+	  
 }
 
 class River {
