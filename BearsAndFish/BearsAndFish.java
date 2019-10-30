@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -82,21 +84,21 @@ public class BearsAndFish {
 class River {
 	int amountOfBears;
 	int amountOfFish;
-	char[] river;
+	List<Character> river;
 	int riverSize;
 
 	public River(int riverSize) {
 		this.riverSize = riverSize;
-		river = new char[riverSize]; 
+		river = new ArrayList<Character>(); 
+	}
+
+	public List<Character> getRiver() {
+		return this.river;
 	}
 
 	public void setupRiver() {
 		for (int i = 0; i < this.riverSize; i++) {
-			this.river[i] = '-';
+			this.river.add('-');
 		}
-	}
-
-	public char[] getRiver() {
-		return this.river;
 	}
 }
