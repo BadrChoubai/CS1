@@ -8,6 +8,31 @@ import java.util.Scanner;
  */
 public class BearsAndFish {
 	/**
+	 * Add creatures to the initial river
+	 */
+	
+	 /**
+	 * Get number of bears from user
+	 * Get number of fish from user
+	*/
+	private static int getCreatureAmount(char creature, Scanner inputScanner) {
+		int creatureAmount = 0;
+
+		switch(creature) {
+			case 'b':
+				System.out.println("How many bears would you like to add to the river?");
+				creatureAmount = inputScanner.nextInt();
+				break;
+			case 'f':
+				System.out.println("How many fish would you like to add to the river?");
+				creatureAmount = inputScanner.nextInt();
+				break;
+		}
+
+		return creatureAmount;
+	}
+
+	/**
 	 * Greet the user.
 	 * Explain the program.
 	 */
@@ -29,36 +54,6 @@ public class BearsAndFish {
 		System.out.println(river.getRiver());
 		return river;
 	} 
-
-
-	/**
-	 * Get number of bears from user
-	*/
-
-	/**
-	 * Get number of fish from user
-	*/
-	private static int getCreatureAmount(char creature, Scanner inputScanner) {
-		int creatureAmount = 0;
-
-		switch(creature) {
-			case 'b':
-				System.out.println("How many bears would you like to add to the river?");
-				creatureAmount = inputScanner.nextInt();
-				break;
-			case 'f':
-				System.out.println("How many fish would you like to add to the river?");
-				creatureAmount = inputScanner.nextInt();
-				break;
-		}
-
-		return creatureAmount;
-	}
-
-
-	 /**
-	  * Add creatures to the initial river
-	  */
 
 	/**
 	 * Main method
