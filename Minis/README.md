@@ -18,19 +18,19 @@ Major topics
 
 ### Program #1: Numbers
 
-[Code](./Numbers.java)
+[Code](./numbers.py)
 
 - Write a complete program that prompts the user for two integers and then prints the following report to the screen, exactly as shown.
 
 ### Program #2: Initials
 
-[Code](./Initials.java)
+[Code](./initials.py)
 
 - Write a complete program that prompts the user to enter their first name, middle name, and last name (separately).  Print out their name and initials.
 
 ### Program #3: Restaurant Bill
 
-[Code](./RestaurantBill.java)
+[Code](./restaurant_bill.py)
 
 - Write a complete program that calculates a restaurant bill.  Prompt the user for the check amount, then ask the user what type of tip they would like to leave: the choices are good tip (20%), average tip (15%), poor tip (10%).  Input this choice by asking the user to enter 1 for a good tip (20%), 2 for an average tip (15%), or 3 for a poor tip (10%).  Use their input and an if-else to calculate the tip amount.  Then calculate and output the final bill.
 
@@ -50,6 +50,6 @@ Major topics
 - source code (three .java classes)
 - two test cases for the restaurant program, on the example test plan sheet (from Moodle)
 
-### Documentation 
+### Documentation
 
 - [Cover Letter](../cover_letters/Minis.md)
