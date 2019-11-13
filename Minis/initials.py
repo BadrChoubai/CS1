@@ -21,8 +21,9 @@ def make_initials(full_name: list) -> str:
 		name_part = name_part.strip()
 		if (name_part):
 			full_name[i] = name_part[:1] + '.'
-		
+
 	return full_name
+
 
 def main():
 	first_name = get_name_input("first")
@@ -33,4 +34,6 @@ def main():
 	initials = ''.join(make_initials(full_name))
 	print(initials)
 
-main()
+
+if __name__ == "__main__":
+	main()
