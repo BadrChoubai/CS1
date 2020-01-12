@@ -1,8 +1,7 @@
 # Metropolitan State University of Denver - Computer Science I
 
-Professor: Dr. Gurka \
-Programming Language: Java \
-Description: This repo contains the source code and documentation related to my CS1 coursework at MSU: Denver, extra material on things I'm interested in practicing such as Algorithms and Data Structures, and solutions for problems that are given during class.
+Programming Languages: Java, Python, JavaScript, Ruby  \
+Description: This repository contains source code for various homeworks given throughout my Computer Science I course at MSU: Denver. The solutions were originally done in Java and I am personally taking the time to re-write them in more preffered languages. 
 
 ---
 
