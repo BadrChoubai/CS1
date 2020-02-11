@@ -1,7 +1,6 @@
 """
 
     Program: Numbers
-    Author: Badr Choubai
     Description: A program that asks a user for two integers and runs a set of basic mathematical equations over them.
     Input: Two integers
     Output: The sum, difference, product and quotient of the two integers
