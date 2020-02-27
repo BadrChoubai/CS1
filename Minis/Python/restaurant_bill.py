@@ -1,10 +1,6 @@
 """
-
 	Program: Restaurant Bill
-    Description: A program that asks a user for their bill total and a tip amount, returns the billTotal calculated with tax and decided tip amout.
-    Input: billTotal, tipAmount
-    Output: billTotal calculated with tax (7%) and selected tip amount (0 || 0.10 || 0.15 || 0.20)
-    
+    Description: A program that prompts the user to enter a bill subtotal, and calculates the total with included taxes and tip amount.
 """
 
 
