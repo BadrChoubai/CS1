@@ -5,12 +5,12 @@
 
 
 def main():
-    first_name = input("Give me your first name: ")
-    middle_name = input("Give me your middle name: ") or ''
-    last_name = input("Give me your last name: ")
+    name_parts = ['first', 'middle', 'last']
+    for i, part in enumerate(name_parts):
+        name_parts[i] = input(f'Give me your {part} name: ')
 
-    initials = f'{ first_name[0] }.{ ( middle_name[0] + "." ) if middle_name else "" }{ last_name[0] }.'
-    print(initials.upper())
+    print(''.join(f'{part[0].upper()}.'
+                  for part in name_parts if len(part) > 0))
 
 
 if __name__ == "__main__":

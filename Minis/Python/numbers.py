@@ -9,15 +9,15 @@ def main():
     num_one = int(input("Give me a number: "))
     num_two = int(input("Give me another number: "))
 
-    sum_result = (num_one + num_two)
-    difference_result = (num_one - num_two)
-    product_result = (num_one * num_two)
-    quotient_result = round(num_one / num_two, 2)
+    results = {
+        'sum': (num_one + num_two),
+        'difference': (num_one - num_two),
+        'product': (num_one * num_two),
+        'quotient': round(num_one / num_two, 2),
+    }
 
-    print(sum_result)
-    print(difference_result)
-    print(product_result)
-    print(quotient_result)
+    for result in results.keys():
+        print('%s: %d' % (result, results[result]))
 
 
 if __name__ == "__main__":
