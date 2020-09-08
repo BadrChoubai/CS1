@@ -15,26 +15,11 @@ public class ToUpper {
         branchless = branchlessToUpper(branchless);
         Instant end = Instant.now();
         System.out.println("Branchless: "+ Duration.between(start, end)); // prints PT1M3.553S
-
-        Instant start2 = Instant.now();
-        branched = branchedToUpper(branched);
-        Instant end2 = Instant.now();
-        System.out.println("Branched: "+ Duration.between(start2, end2)); // prints PT1M3.553S
-    }    
+    }
 
     public static char[] branchlessToUpper(char[] chars) {
         for (int i = 0; i < chars.length; i++) {
             chars[i] = toUpper(chars[i]);
-        }
-
-        return chars;
-    }
-
-    public static char[] branchedToUpper(char[] chars) {
-        for (int i = 0; i < chars.length; ++i) {
-            if (!Character.isUpperCase(chars[i])) {
-                chars[i] = toUpper(chars[i]);
-            }
         }
 
         return chars;
