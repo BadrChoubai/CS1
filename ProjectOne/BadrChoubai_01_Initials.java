@@ -3,7 +3,7 @@ Program name: Initials
 Description: A program that given a user's first, middle and, last name. Prints their initials.
 Author: Badr Choubai
 Date: September 8, 2020
-Version: 1
+Version: 2
 
 Vocabulary word (non-computer related):
 
@@ -56,24 +56,24 @@ public class BadrChoubai_01_Initials {
 
     public static void main(String[] args) {
         StringBuilder initials = new StringBuilder();
-        String name = "";
+        StringBuilder name = new StringBuilder();
 
         System.out.print("Enter your first name:\n> ");
-        name += " "+inputScanner.nextLine();
+        name.append(" ").append(inputScanner.nextLine());
         System.out.print("Enter your middle name:\n> ");
-        name += " "+inputScanner.nextLine();
+        name.append(" ").append(inputScanner.nextLine());
         System.out.print("Enter your last name:\n> ");
-        name += " "+inputScanner.nextLine();
+        name.append(" ").append(inputScanner.nextLine());
 
-        name = toTitleCase(name);
+        String nameResult = toTitleCase(name.toString());
 
-        for (String namePart : name.split("\\s+")) {
+        for (String namePart : nameResult.split(" ")) {
             if (!namePart.isBlank()) {
                 initials.append(namePart.charAt(0)).append(".");
             }
         }
 
-        System.out.printf("Your name is: %s.\n", toTitleCase(name));
+        System.out.printf("Your name is: %s.\n", nameResult);
         System.out.printf("Your initials are: %s\n", initials);
     }
 }
