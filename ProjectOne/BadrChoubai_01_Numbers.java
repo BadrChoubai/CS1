@@ -23,8 +23,8 @@ import java.util.Scanner;
 public class BadrChoubai_01_Numbers {
     private static Scanner inputScanner = new Scanner(System.in);
     public static void main(String[] args) {
-        var numOne = 0;
-        var numTwo = 0;
+        int numOne;
+        int numTwo;
         System.out.print("Please give me a number:\n> ");
         numOne = inputScanner.nextInt();
         System.out.print("Please give me another number:\n> ");
