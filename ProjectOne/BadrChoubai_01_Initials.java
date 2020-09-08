@@ -3,7 +3,7 @@
 Program name: Initials
 Description: A program that given a user's first, middle and, last name. Prints their initials. 
 Author: Badr Choubai
-Date: June 16, 2020
+Date: September 8, 2020
 Version: 1
 
 Vocabulary word (non-computer related):
@@ -25,6 +25,37 @@ public class BadrChoubai_01_Initials {
 
     private static Scanner inputScanner = new Scanner(System.in);
 
+    static String toTitleCase(String input)
+    {
+        if (input == null || input.isEmpty())
+        {
+            return "";
+        }
+
+        if (input.length() == 1)
+        {
+            return input.toUpperCase();
+        }
+
+        String[] parts = input.split("\\s+");
+        StringBuilder resultString = new StringBuilder(input.length());
+
+        for (String part : parts)
+        {
+            if (part.length() > 1)
+            {
+                resultString.append(part.substring(0, 1).toUpperCase()).append(part.substring(1));
+            }
+            else
+                resultString.append(part.toUpperCase());
+
+            resultString.append(" ");
+        }
+
+        return resultString.toString().trim();
+
+    }
+
     public static void main(String[] args) {
         String initials = "";
         String name = "";
@@ -36,13 +67,15 @@ public class BadrChoubai_01_Initials {
         System.out.print("Enter your last name:\n> ");
         name += " "+inputScanner.nextLine();
 
+        name = toTitleCase(name);
+
         for (String namePart : name.split(" ")) {
             if (!namePart.isBlank()) {
                 initials += namePart.charAt(0) + ".";
             }
         }
 
-        System.out.printf("Your name is: %s.\n", name.trim().replaceAll("\\s+", " "));
-        System.out.printf("Your intials are: %s\n", initials.toUpperCase());
+        System.out.printf("Your name is: %s.\n", toTitleCase(name));
+        System.out.printf("Your initials are: %s\n", initials);
     }
 }

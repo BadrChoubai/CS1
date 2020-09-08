@@ -2,7 +2,7 @@
 Program name: Numbers
 Description: A small program that prints the results of several calculations for two given numbers.
 Author: Badr Choubai
-Date: June 16, 2020
+Date: September 8, 2020
 Version: 1
 
 Vocabulary word (non-computer related):
