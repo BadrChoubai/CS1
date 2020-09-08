@@ -1,7 +1,6 @@
-
 /*
 Program name: Initials
-Description: A program that given a user's first, middle and, last name. Prints their initials. 
+Description: A program that given a user's first, middle and, last name. Prints their initials.
 Author: Badr Choubai
 Date: September 8, 2020
 Version: 1
@@ -15,7 +14,7 @@ minimalism :: noun
 Inspirational quote and author (non-political, non-religious):
 
 “Simply put, humans are not wired to be constantly wired.”
-~ Cal Newport, Digital Minimalism: Choosing a Focused Life in a Noisy World 
+~ Cal Newport, Digital Minimalism: Choosing a Focused Life in a Noisy World
 
 
 */
@@ -53,11 +52,10 @@ public class BadrChoubai_01_Initials {
         }
 
         return resultString.toString().trim();
-
     }
 
     public static void main(String[] args) {
-        String initials = "";
+        StringBuilder initials = new StringBuilder();
         String name = "";
 
         System.out.print("Enter your first name:\n> ");
@@ -69,9 +67,9 @@ public class BadrChoubai_01_Initials {
 
         name = toTitleCase(name);
 
-        for (String namePart : name.split(" ")) {
+        for (String namePart : name.split("\\s+")) {
             if (!namePart.isBlank()) {
-                initials += namePart.charAt(0) + ".";
+                initials.append(namePart.charAt(0)).append(".");
             }
         }
 
