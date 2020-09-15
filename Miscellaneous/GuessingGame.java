@@ -18,7 +18,8 @@ class GuessingGame {
 
     public int getGuess()
     {
-        // TODO : Implement logic for fetching, validating and returning user input;
+        // TODO : Implement logic for fetching, validating and returning user input
+        return;
     }
 
     public void play()
