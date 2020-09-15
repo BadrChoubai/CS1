@@ -59,7 +59,7 @@ public class BadrChoubai_01_Initials {
         StringBuilder name = new StringBuilder();
 
         System.out.print("Enter your first name:\n> ");
-        name.append(" ").append(inputScanner.nextLine());
+        name.append(inputScanner.nextLine());
         System.out.print("Enter your middle name:\n> ");
         name.append(" ").append(inputScanner.nextLine());
         System.out.print("Enter your last name:\n> ");
@@ -68,9 +68,7 @@ public class BadrChoubai_01_Initials {
         String nameResult = toTitleCase(name.toString());
 
         for (String namePart : nameResult.split(" ")) {
-            if (!namePart.isBlank()) {
-                initials.append(namePart.charAt(0)).append(".");
-            }
+            initials.append(namePart.charAt(0)).append(".");
         }
 
         System.out.printf("Your name is: %s.\n", nameResult);
