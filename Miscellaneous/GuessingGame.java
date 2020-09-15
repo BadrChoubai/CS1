@@ -13,8 +13,10 @@ class GuessingGame {
      */
 
     private static Scanner inputScanner = new Scanner(System.in);
-    public static boolean playing = true;
-    public static int number;
+    public static int guessCounter = 0;
+    public static boolean playing = false;
+    public int min, max;
+    public int number;
 
     public int getGuess()
     {
@@ -25,12 +27,21 @@ class GuessingGame {
     public void play()
     {
         // TODO : implement game logic
+        System.out.println(this.min);
+        System.out.println(this.max);
+        System.out.println(this.number);
     }
 
+    public GuessingGame(int min, int max) {
+        this.min = min;
+        this.max = max;
+        this.number = (int) (Math.random() * max) + min;
+    }
 
     public GuessingGame() {
-        this.playing = true;
-        this.number = (int) (1 * Math.random()) * 100;
+        this.min = 1;
+        this.max = 100;
+        this.number = (int) (Math.random() * this.max) + this.min;
     }
 
     public static void main(String[] args)
@@ -40,5 +51,9 @@ class GuessingGame {
         GuessingGame gameInstance = new GuessingGame();
 
         gameInstance.play();
+
+        GuessingGame gameInstanceCustomMinAndMax = new GuessingGame(2, 200);
+
+        gameInstanceCustomMinAndMax.play();
     }
 }
