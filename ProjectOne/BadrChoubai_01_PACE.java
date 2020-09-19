@@ -1,9 +1,10 @@
 /*
+
 Program name: PACE (Physical Activity Calorie Equivalent) and Calories
 Description: A program that prompts its user for a food item and the calories it contains. Then, computes and outputs how many minutes the user would need to walk to burn off those calories.
 Author: Badr Choubai
 Date: September 8, 2020
-Version: 1
+Version: 2
 
 Vocabulary word (non-computer related):
 
