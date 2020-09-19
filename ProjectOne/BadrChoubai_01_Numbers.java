@@ -3,7 +3,7 @@ Program name: Numbers
 Description: A small program that prints the results of several calculations for two given numbers.
 Author: Badr Choubai
 Date: September 8, 2020
-Version: 1
+Version: 2
 
 Vocabulary word (non-computer related):
 
@@ -29,7 +29,8 @@ public class BadrChoubai_01_Numbers {
         numOne = inputScanner.nextInt();
         System.out.print("Please give me another number:\n> ");
         numTwo = inputScanner.nextInt();
-        
+
+        System.out.printf("Your numbers are: %d and %d\n", numOne, numTwo);
         System.out.printf("Sum = %d\n", (numOne + numTwo));
         System.out.printf("Product = %d\n", (numOne * numTwo));
     }
