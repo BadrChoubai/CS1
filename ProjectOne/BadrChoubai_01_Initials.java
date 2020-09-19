@@ -1,4 +1,5 @@
 /*
+
 Program name: Initials
 Description: A program that given a user's first, middle and, last name. Prints their initials.
 Author: Badr Choubai
@@ -15,7 +16,6 @@ Inspirational quote and author (non-political, non-religious):
 
 “Simply put, humans are not wired to be constantly wired.”
 ~ Cal Newport, Digital Minimalism: Choosing a Focused Life in a Noisy World
-
 
 */
 import java.util.Scanner;
