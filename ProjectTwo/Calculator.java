@@ -22,9 +22,9 @@
 import java.util.Scanner;
 
 class Calculator {
-    private Scanner inputScanner = new Scanner(System.in);
-    int additionCount, subtractionCount, divisionCount, multiplicationCount = 0;
-    int totalProblemsSolved = 0;
+    private static Scanner inputScanner = new Scanner(System.in);
+    static int additionCount, subtractionCount, divisionCount, multiplicationCount = 0;
+    static int totalProblemsSolved = 0;
     Calculator() {}
 
     private static void printIntro()
@@ -35,12 +35,22 @@ class Calculator {
         System.out.println("\n\tAddition, Subtraction, Multiplication or Division\n");
         System.out.println("Then, we'll prompt you for two different numbers (Integers only)");
         System.out.print("\nYou can solve as many problems as you want, and we'll keep track of it. Happy Solving!");
+    }
 
+    private static void printResults()
+    {
+        System.out.println();
+        System.out.printf("Addition Problems Solved: %d\n", additionCount);
+        System.out.printf("Subtraction Problems Solved: %d\n", subtractionCount);
+        System.out.printf("Division Problems Solved: %d\n", divisionCount);
+        System.out.printf("Multiplication Problems Solved: %d\n", multiplicationCount);
+        System.out.printf("Total Problems Solved: %d\n", totalProblemsSolved);
     }
 
 
     public static void main(String[] args)
     {
         printIntro();
+        printResults();
     }
 }
