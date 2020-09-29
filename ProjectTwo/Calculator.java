@@ -19,7 +19,11 @@
  *      ~ Nassim Nicholas Taleb, Antifragile
  *
  */
+import java.util.Scanner;
+
 class Calculator {
+    private Scanner inputScanner = new Scanner(System.in);
+
     public static void main(String[] args)
     {
         System.out.println("JCalc v.0.0.1");

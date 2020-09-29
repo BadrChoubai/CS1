@@ -1,0 +1,115 @@
+Functionality of the calculator program:
+
+it does three things:
+
+    1. Prompt the user for the type of math operation they would like to perform
+        [ addition, subtraction, multiplication, division ]
+
+        and also prompt the user for two operands
+
+    2. The program runs until the user does not want to solve any more programs
+    3. The program must print a final tally of problems at the end
+
+Program Structure
+
+Class
+
+    Constructor
+
+        initializes counters to zero, instantiates an initializes a Scanner Object
+
+    printIntro method
+
+        explains the program to the user
+
+    calculate method
+
+        while <- user_intrigued?
+
+            display operation choices
+            get userChoice -> Show them what they chose
+
+            get operands
+
+            calculate and print their answer
+
+            increment the operation's counter
+
+            ask if the user is still intrigued
+
+        calculate the total number of problems done addCount + subCount + divCount + multCount
+
+    printReport method
+
+        outputs total number of operations performed per operationType and overallTotalProblems
+
+
+    main method
+
+        calls to printintro, calculate and printReport
+
+    instance data
+
+        a Scanner -> Scanner inputScanner = new Scanner(System.in);
+        4 ints to hold the counts of each operation done
+        1 int to hold the count for totalProblemsSolved
+
+
+I/O
+
+    interactive only, no input file
+
+    input
+
+        -> user
+         - Enters the type of operation they would like to perform
+         - Enters the two numbers they would like to perform the operation on
+         - enters the decision whether or not to solve another problem
+
+        * The user may enter either uppercase or lowercase for problemType and continue?.
+        * Reading Numbers :: all input is String type, so it must be converted.
+
+            Take a look at Integer.parseInt(String n);
+
+    output
+
+        - Directions to the user on how to use the program
+        - prompts to choose the type of mathematical problem a user would like to perform
+        - calculated answer to the math problem
+        - summary of problem types and overall results
+
+
+Assumptions and Limitations
+
+    integers only (no real numbers)
+    input numbers and answer will fit in the range of the int data type
+    division is integer division
+    binary operations only -> two operands
+    addition, subtraction, multiplication, division and exit are the only operations supported
+    perfect user
+    results are not saved
+    the user will do at least one problem.
+
+Criteria:
+
+:- Program compiles without error, and gets correct answers
+:- All deliverables are submitted
+:   - Cover letter with discussion questions listed above
+:   - source code (uno .java)
+:   - text file with cut and paste copy of testing session number 5
+:- All specifications followed (_this_)
+
+Challenges
+
+    -> Add the modulus operator function as a fifth choice, following the spec requirements
+       as you would for the other operationTypes
+
+    -> Experiment with the NumberFormat class to learn how to place commas in results larger than 999
+
+    -> Instead of printing the result for a user as "the result is: %d", write it in math format
+
+        %d |+ - * / %| %d = %d
+
+    -> Print totals for each type only if the user did any of that type.
+
+
