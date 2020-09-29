@@ -37,6 +37,23 @@ class Calculator {
         System.out.print("\nYou can solve as many problems as you want, and we'll keep track of it. Happy Solving!");
     }
 
+    private static void calculate() {
+        while (true)
+        {
+            System.out.println("What type of operation would you like to perform?");
+            System.out.println("Select you answer by typing the first letter");
+            System.out.println("(A)ddition");
+            System.out.println("(S)ubtraction");
+            System.out.println("(D)ivision");
+            System.out.println("(M)ultiplication");
+
+            String userChoice = inputScanner.nextLine();
+            System.out.println(userChoice);
+            break;
+        }
+
+    }
+
     private static void printResults()
     {
         System.out.println();
@@ -47,10 +64,10 @@ class Calculator {
         System.out.printf("Total Problems Solved: %d\n", totalProblemsSolved);
     }
 
-
     public static void main(String[] args)
     {
         printIntro();
+        calculate();
         printResults();
     }
 }
