@@ -1,0 +1,7 @@
+Please give me a number:
+> 34
+Please give me another number:
+> 41
+Your numbers are: 34 and 41
+Sum = 75
+Product = 1394
