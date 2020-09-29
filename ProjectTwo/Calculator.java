@@ -24,7 +24,10 @@ import java.util.Scanner;
 class Calculator {
     private static Scanner inputScanner = new Scanner(System.in);
     static int additionCount, subtractionCount, divisionCount, multiplicationCount = 0;
-    static int totalProblemsSolved = 0;
+    static char symbol;
+    static int answer;
+    static int firstOperand, secondOperand;
+
     Calculator() {}
 
     private static void printIntro()
@@ -40,15 +43,61 @@ class Calculator {
     private static void calculate() {
         while (true)
         {
-            System.out.println("What type of operation would you like to perform?");
+            System.out.println("\nWhat type of operation would you like to perform?");
             System.out.println("Select you answer by typing the first letter");
-            System.out.println("(A)ddition");
-            System.out.println("(S)ubtraction");
-            System.out.println("(D)ivision");
-            System.out.println("(M)ultiplication");
+            for (String prompt: new String[]{"(A)ddition", "(S)ubtraction", "(D)ivision", "(M)ultiplication"})
+            {
+                System.out.printf("%s\n", prompt);
+            }
 
-            String userChoice = inputScanner.nextLine();
-            System.out.println(userChoice);
+            System.out.print("> ");
+            String userChoice = inputScanner.nextLine().toUpperCase();
+
+            switch(userChoice)
+            {
+                case "A":
+                    System.out.println("You chose Addition");
+                    symbol = '+';
+                    System.out.print("First number\n> ");
+                    firstOperand = inputScanner.nextInt();
+                    System.out.print("Second number\n> ");
+                    secondOperand = inputScanner.nextInt();
+                    answer = firstOperand + secondOperand;
+                    additionCount++;
+                    break;
+                case "S":
+                    System.out.println("You chose Subtraction");
+                    symbol = '-';
+                    System.out.print("First number\n> ");
+                    firstOperand = inputScanner.nextInt();
+                    System.out.print("Second number\n> ");
+                    secondOperand = inputScanner.nextInt();
+                    answer = firstOperand - secondOperand;
+                    subtractionCount++;
+                    break;
+                case "D":
+                    System.out.println("You chose Division");
+                    symbol = '/';
+                    System.out.print("First number\n> ");
+                    firstOperand = inputScanner.nextInt();
+                    System.out.print("Second number\n> ");
+                    secondOperand = inputScanner.nextInt();
+                    answer = firstOperand / secondOperand;
+                    divisionCount++;
+                    break;
+                case "M":
+                    System.out.println("You chose Multiplication");
+                    symbol = '*';
+                    System.out.print("First number\n> ");
+                    firstOperand = inputScanner.nextInt();
+                    System.out.print("Second number\n> ");
+                    secondOperand = inputScanner.nextInt();
+                    answer = firstOperand * secondOperand;
+                    multiplicationCount++;
+                    break;
+            }
+
+            System.out.printf("\n%d %s %d = %d", firstOperand, symbol, secondOperand, answer);
             break;
         }
 
@@ -61,7 +110,7 @@ class Calculator {
         System.out.printf("Subtraction Problems Solved: %d\n", subtractionCount);
         System.out.printf("Division Problems Solved: %d\n", divisionCount);
         System.out.printf("Multiplication Problems Solved: %d\n", multiplicationCount);
-        System.out.printf("Total Problems Solved: %d\n", totalProblemsSolved);
+        System.out.printf("Total Problems Solved: %d\n", (additionCount + subtractionCount + divisionCount + multiplicationCount));
     }
 
     public static void main(String[] args)
