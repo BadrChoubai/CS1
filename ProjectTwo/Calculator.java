@@ -41,7 +41,8 @@ class Calculator {
     }
 
     private static void calculate() {
-        while (true)
+        boolean _continue = true;
+        while (_continue)
         {
             System.out.println("\nWhat type of operation would you like to perform?");
             System.out.println("Select you answer by typing the first letter");
@@ -98,7 +99,9 @@ class Calculator {
             }
 
             System.out.printf("\n%d %s %d = %d", firstOperand, symbol, secondOperand, answer);
-            break;
+
+            System.out.print("Would you like to run another calculation?\n(Y)es\n(N)o\n> ");
+            _continue = inputScanner.nextLine().equals("yes") || inputScanner.nextLine().equals("y");
         }
 
     }
