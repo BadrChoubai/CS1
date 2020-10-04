@@ -38,17 +38,15 @@ public class Calculator {
         System.out.println("Welcome to JCalc v.0.2");
         System.out.println("This program helps you solve simple math problems.\n");
         System.out.println("First, we'll prompt you for the type of operation you'd like to perform");
-        System.out.println("\n\tAddition, Subtraction, Multiplication or Division\n");
         System.out.println("Then, we'll prompt you for two different numbers (Integers only)");
-        System.out.print("\nYou can solve as many problems as you want, and we'll keep track of it. Happy Solving!");
+        System.out.println("You can solve as many problems as you want, and we'll keep track of it. Happy Solving!\n");
     }
 
     private static void calculate() {
         String response;
         int operandOne, operandTwo;
 
-        do
-        {
+        do {
             String operationChoice;
             System.out.println("What operation would you like to perform?");
             System.out.println("(A)ddition");
