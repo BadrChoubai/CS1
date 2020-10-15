@@ -2,12 +2,25 @@ Discussion Questions:
 
 1. Overflow. Find out what happens when you try to add to numbers that exceeds Integer.MAX_INT,
    test two billion plus two billion. What result did you get?
+   
+   Give me a number
+   2000000000
+   Give me another number
+   2000000000
+   2000000000 + 2000000000 = -294967296
 
 2. Explain inexact results on integer division such as
     2 / 5 = 0  and  51 / 25 = 2
+ 
+The reason these equate to the wrong value is that we are not settting the input variables to double
 
 3. What syntax did you have the most trouble getting right?
 
+I use Intellij IDE and tend not to run into issues with syntax.
+
 4. What semantics did you have the most trouble understanding?
+
+I struggled with getting the logic correct for running the "game loop" and fetching multiple 
+user inputs.
 
 
