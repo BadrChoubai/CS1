@@ -1,0 +1,152 @@
+Welcome to JCalc v.0.2
+This program helps you solve simple math problems.
+
+First, we'll prompt you for the type of operation you'd like to perform
+Then, we'll prompt you for two different numbers (Integers only)
+You can solve as many problems as you want, and we'll keep track of it. Happy Solving!
+
+What operation would you like to perform?
+(A)ddition
+(S)ubtraction
+(M)ultiplication
+(D)ivision
+(R) Modulo
+
+(E)xit
+Operation? a
+
+You chose Addition
+Give me a number
+111
+Give me another number
+222
+111 + 222 = 333
+Would you like to solve another problem
+(Y)es
+(N)o
+y
+What operation would you like to perform?
+(A)ddition
+(S)ubtraction
+(M)ultiplication
+(D)ivision
+(R) Modulo
+
+(E)xit
+Operation? a
+
+You chose Addition
+Give me a number
+9999
+Give me another number
+8888
+9999 + 8888 = 18887
+Would you like to solve another problem
+(Y)es
+(N)o
+y
+What operation would you like to perform?
+(A)ddition
+(S)ubtraction
+(M)ultiplication
+(D)ivision
+(R) Modulo
+
+(E)xit
+Operation? d
+
+You chose Division
+Give me a number
+83
+Give me another number
+83
+83 / 83 = 1
+Would you like to solve another problem
+(Y)es
+(N)o
+y
+What operation would you like to perform?
+(A)ddition
+(S)ubtraction
+(M)ultiplication
+(D)ivision
+(R) Modulo
+
+(E)xit
+Operation? d
+
+You chose Division
+Give me a number
+84
+Give me another number
+83
+84 / 83 = 1
+Would you like to solve another problem
+(Y)es
+(N)o
+y
+What operation would you like to perform?
+(A)ddition
+(S)ubtraction
+(M)ultiplication
+(D)ivision
+(R) Modulo
+
+(E)xit
+Operation? d
+
+You chose Division
+Give me a number
+83
+Give me another number
+84
+83 / 84 = 0
+Would you like to solve another problem
+(Y)es
+(N)o
+y
+What operation would you like to perform?
+(A)ddition
+(S)ubtraction
+(M)ultiplication
+(D)ivision
+(R) Modulo
+
+(E)xit
+Operation? s
+
+You chose Subtraction
+Give me a number
+0
+Give me another number
+0
+0 - 0 = 0
+Would you like to solve another problem
+(Y)es
+(N)o
+y
+What operation would you like to perform?
+(A)ddition
+(S)ubtraction
+(M)ultiplication
+(D)ivision
+(R) Modulo
+
+(E)xit
+Operation? a
+
+You chose Addition
+Give me a number
+500000
+Give me another number
+500001
+500000 + 500001 = 1000001
+Would you like to solve another problem
+(Y)es
+(N)o
+n
+Calculator Report
+Addition Problems Solved: 3
+Subtraction Problems Solved: 1
+Division Problems Solved: 3
+Total Problems Solved: 7

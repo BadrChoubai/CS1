@@ -34,7 +34,7 @@ public class Calculator {
         moduloCount = 0;
     }
 
-    private static void printIntro() {
+    public static void printIntro() {
         System.out.println("Welcome to JCalc v.0.2");
         System.out.println("This program helps you solve simple math problems.\n");
         System.out.println("First, we'll prompt you for the type of operation you'd like to perform");
@@ -42,7 +42,7 @@ public class Calculator {
         System.out.println("You can solve as many problems as you want, and we'll keep track of it. Happy Solving!\n");
     }
 
-    private static void calculate() {
+    public static void calculate() {
         String response;
         int operandOne, operandTwo;
 
@@ -54,8 +54,13 @@ public class Calculator {
             System.out.println("(M)ultiplication");
             System.out.println("(D)ivision");
             System.out.println("(R) Modulo");
+            System.out.println();
+            System.out.println("(E)xit");
 
+            System.out.print("Operation? ");
             operationChoice = inputScanner.next().toUpperCase();
+
+            System.out.println();
 
             switch (operationChoice) {
                 case "A":
@@ -103,6 +108,9 @@ public class Calculator {
                     System.out.printf("%d %% %d = %d\n", operandOne, operandTwo, (operandOne % operandTwo));
                     moduloCount++;
                     break;
+                case "E":
+                    System.out.println("Closing JCalc");
+                    System.exit(1);
             }
 
             System.out.println("Would you like to solve another problem");
@@ -112,8 +120,8 @@ public class Calculator {
         } while ((response.startsWith("Y")) || response.startsWith("y"));
     }
 
-    private static void printResults() {
-        System.out.println();
+    public static void printResults() {
+        System.out.println("Calculator Report");
 
         if (additionCount > 0)
             System.out.printf("Addition Problems Solved: %d\n", additionCount);
