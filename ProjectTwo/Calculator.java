@@ -114,11 +114,22 @@ public class Calculator {
 
     private static void printResults() {
         System.out.println();
-        System.out.printf("Addition Problems Solved: %d\n", additionCount);
-        System.out.printf("Subtraction Problems Solved: %d\n", subtractionCount);
-        System.out.printf("Multiplication Problems Solved: %d\n", multiplicationCount);
-        System.out.printf("Division Problems Solved: %d\n", divisionCount);
-        System.out.printf("Modulo Problems Solved: %d\n", moduloCount);
+
+        if (additionCount > 0)
+            System.out.printf("Addition Problems Solved: %d\n", additionCount);
+
+        if (subtractionCount > 0)
+            System.out.printf("Subtraction Problems Solved: %d\n", subtractionCount);
+
+        if (multiplicationCount > 0)
+            System.out.printf("Multiplication Problems Solved: %d\n", multiplicationCount);
+
+        if (divisionCount > 0)
+            System.out.printf("Division Problems Solved: %d\n", divisionCount);
+
+        if (moduloCount > 0)
+            System.out.printf("Modulo Problems Solved: %d\n", moduloCount);
+
         System.out.printf("Total Problems Solved: %d\n",
                 (additionCount + subtractionCount + multiplicationCount + divisionCount + moduloCount));
     }
