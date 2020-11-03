@@ -1,3 +1,5 @@
+import com.sun.source.tree.LambdaExpressionTree;
+
 import javax.swing.*;
 import java.awt.event.*;
 import java.io.*;
@@ -18,11 +20,11 @@ public class LetterDistribution
          * to display in the barchart
          */
         Map<Character, Integer> letterFrequency = new HashMap<Character, Integer>(26);
+        ArrayList<Double> percentages = new ArrayList<Double>(26);
         for (char c : LETTERS_IN_THE_ALPHABET.toCharArray())
         {
             letterFrequency.put(c, 0);
         }
-
         /*
          * Set up a Scanner that reads a file
          */
@@ -36,21 +38,28 @@ public class LetterDistribution
                 if (letterFrequency.keySet().contains(c))
                 {
                     int curr = letterFrequency.get(c);
-                    curr++;
-                    letterFrequency.put(c, curr);
+                    letterFrequency.put(c, ++curr);
                 }
             }
         }
 
         fileScanner.close();
-
         // Get the total letter count
         // https://docs.oracle.com/javase/tutorial/collections/streams/reduction.html
+        // https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
         int totalLetterCount = letterFrequency
             .values()
             .stream()
             .reduce(0, (a, b) -> a + b);
 
-        System.out.println(totalLetterCount);
+        // convert each letter count to it's percentage of the total letter count
+        letterFrequency
+            .values()
+            .stream()
+            .forEach(count -> {
+                double percentage = Math.floor(((double) count / (double) totalLetterCount) * 100);
+                percentages.add(percentage);
+                System.out.println(percentage);
+            });
     }
 }

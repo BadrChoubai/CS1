@@ -48,8 +48,8 @@ public class LetterDistributionTemplate {
          f.setSize(FRAME_WIDTH, FRAME_HEIGHT);
          String title = FILE_NAME.split("\\.")[0];
 
-         BarChart chart = new BarChart(title, lettersLabels, lettersFrequency);
-         f.getContentPane().add(chart);
+//         BarChart chart = new BarChart(title, lettersLabels, lettersFrequency);
+ //        f.getContentPane().add(chart);
 
          WindowListener wndCloser = new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
