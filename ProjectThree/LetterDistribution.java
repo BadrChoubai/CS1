@@ -14,13 +14,13 @@ public class LetterDistribution
     public static void main(String[] args) throws FileNotFoundException
     {
         /* Utilizing a map allows us to keep track of all our application's
-         * We need to be able to track each letter's occurence as a percentage
+         * We need to be able to track each letter's occurence
          * to display in the barchart
          */
-        Map<Character, Double> letterFrequency = new HashMap<Character, Double>(26);
+        Map<Character, Integer> letterFrequency = new HashMap<Character, Integer>(26);
         for (char c : LETTERS_IN_THE_ALPHABET.toCharArray())
         {
-            letterFrequency.put(c, 0.0);
+            letterFrequency.put(c, 0);
         }
 
         /*
@@ -29,8 +29,24 @@ public class LetterDistribution
         File file = new File(FILE_NAME);
         Scanner fileScanner = new Scanner(file);
 
-        while (fileScanner.hasNext()) {
-            System.out.println(fileScanner.next());
+        while (fileScanner.hasNext())
+        {
+            for (char c : fileScanner.next().toCharArray())
+            {
+                if (letterFrequency.keySet().contains(c)) {
+                    int curr = letterFrequency.get(c);
+                    curr++;
+                    letterFrequency.put(c, curr);
+                }
+            }
+        }
+
+        fileScanner.close();
+
+        for (char c : letterFrequency.keySet())
+        {
+            System.out.println(c);
+            System.out.println(letterFrequency.get(c));
         }
     }
 }
