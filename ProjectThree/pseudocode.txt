@@ -1,0 +1,60 @@
+___ Project 3: Letter Distribution ___
+
+Goal: Create a program that reads in a text file, keeps track of the
+occurrences of the letters A-Z (case insensitive), and displays it at the
+end in a bar graph where the Y axis is the Percentage Distribution and the
+X axis are the Letters.
+
+What tools do we have?
+
+- Arrays and ArrayLists
+- Scanner
+
+What tools could we also use?
+
+- Hashmap
+
+
+```java
+
+// How do we read in a file?
+File fileToRead = new File($filepath);
+Scanner fileScanner = new Scanner(fileToRead);
+
+// How do we iterate through the file?
+while(fileScanner.hasNext())
+{
+    // Implementation not show...
+}
+
+```
+
+How do we calculate percentage?
+
+(part / whole) * 100;
+
+### PSEUDOCODE ###
+
+Application Data
+
+Occurrences of letter A-Z in each line of a text file
+
+The best way to track this is using a Key:Value store, which can be done using a HashMap
+in Java
+
+create it as -> Map<Character, Integer> letterFrequency = new HashMap<Character, Integer>(26);
+
+Similar to a 'dict' in Python
+
+letter_frequency = {
+    'a': 0,
+    'b': 0,
+    'c': 0,
+    ...
+}
+
+Some useful methods belonging to the Map class
+- .values()
+- .keySet()
+- .put()
+

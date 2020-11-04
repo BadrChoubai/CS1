@@ -43,7 +43,7 @@ public class LetterDistribution {
          * barchart as a percentage in the final output
          */
         Map<Character, Integer> letterFrequency = new HashMap<Character, Integer>(26);
-        ArrayList<Double> percentages = new ArrayList<Double>(26);
+        List<Double> percentages = new ArrayList<Double>(26);
         for (char letter : LETTERS_IN_THE_ALPHABET.toCharArray()) {
             letterFrequency.put(letter, 0);
         }
