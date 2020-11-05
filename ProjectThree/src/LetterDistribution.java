@@ -32,18 +32,27 @@ import java.io.*;
 import java.util.*;
 
 public class LetterDistribution {
-    static final String LETTERS_IN_THE_ALPHABET = "abcdefghijklmnopqrstuvwxyz";
-    static final String FILE_NAME = "src/Rudolph.txt";
-    static final int FRAME_WIDTH = 1024;
-    static final int FRAME_HEIGHT = 768;
+    static final String LETTERS_IN_THE_ALPHABET;
+    static final String FILE_NAME;
+    static final int FRAME_WIDTH;
+    static final int FRAME_HEIGHT;
+
+    static
+    {
+        LETTERS_IN_THE_ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+        FILE_NAME = "src/Authors.txt";
+        FRAME_WIDTH = 1024;
+        FRAME_HEIGHT = 768;
+    }
+
 
     public static void main(String[] args) throws FileNotFoundException {
         /* Utilizing a HashMap allows us to keep track of all our application data
          * We need to be able to track each letter's occurrence to display in the
          * barchart as a percentage in the final output
          */
-        Map<Character, Integer> letterFrequency = new HashMap<Character, Integer>(26);
-        List<Double> percentages = new ArrayList<Double>(26);
+        Map<Character, Integer> letterFrequency = new HashMap<>(26);
+        List<Double> percentages = new ArrayList<>(26);
         for (char letter : LETTERS_IN_THE_ALPHABET.toCharArray()) {
             letterFrequency.put(letter, 0);
         }
@@ -53,8 +62,8 @@ public class LetterDistribution {
         Scanner fileScanner = new Scanner(file);
 
         while (fileScanner.hasNext()) {
-            for (char c : fileScanner.next().toLowerCase().toCharArray()) {
-                if (letterFrequency.keySet().contains(c)) {
+            for (char c : fileScanner.nextLine().toLowerCase().toCharArray()) {
+                if (letterFrequency.containsKey(c)) {
                     int curr = letterFrequency.get(c);
                     letterFrequency.put(c, ++curr);
                 }
@@ -71,13 +80,12 @@ public class LetterDistribution {
         int totalLetterCount = letterFrequency
                 .values()
                 .stream()
-                .reduce(0, (a, b) -> a + b);
+                .reduce(0, Integer::sum);
 
         // Use Stream.forEach() to iterate each value of our letterFrequencyValues stream,
         // calculate its occurrence as a percentage and add it to our percentages ArrayList.
         letterFrequency
                 .values()
-                .stream()
                 .forEach(count -> {
                     double percentage = ((double) count / (double) totalLetterCount) * 100;
                     percentages.add(percentage);
